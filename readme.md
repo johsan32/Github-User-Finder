@@ -21,7 +21,7 @@
 ## (sitenin tam işlevsel hale gelmesi için alttaki alana göz atınız.)
 
 
-![print-screen](screen.jpg)
+![print-screen](screen.png)
 
 ![gif](gif.gif)
 
