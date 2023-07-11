@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,300;1,400&family=Chivo+Mono:wght@200;300;400;500;600;700;800&family=Crimson+Text:ital,wght@0,400;0,600;1,600&family=DynaPuff:wght@400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&family=Lobster&family=Maven+Pro:wght@400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Sedgwick+Ave+Display&display=swap');
+
+:root {
+  --body-color: #0d1117;
+  --header-bg: #24292e;
+  --section-color: #161b22;
+  --font-color: #c2c3c5;
+  --border-color: #30363d;
+  --my-font: 'Maven Pro', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--my-font);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100wh;
+  // margin-bottom: 60px;
+  position: relative;
+}
+
+.header {
+  background-color: #24292e;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  width: 100%;
+
+  &-logo {
+    margin-right: 16px;
+
+    i {
+      font-size: 32px;
+      color: #fff;
+      transition: all ease .5s;
+      cursor: pointer;
+
+      &:hover {
+        color: #afb8c1;
+      }
+    }
+  }
+
+  &-search {
+    position: relative;
+    background-color: hsla(0, 0%, 100%, .125);
+    width: 250px;
+    height: 30px;
+    margin-right: 26px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+    button {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      left: 0;
+      font-size: 14px;
+      border: 1px solid var(--border-color);
+      border: none;
+      outline: none;
+      padding: 4px;
+      color: #fff;
+      background-color: var(--border-color);
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--font-color);
+        transform: scale(1.1);
+      }
+    }
+
+    input {
+      padding-left: 5px;
+      font-size: 16px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      display: flex;
+      align-items: center;
+      padding: 5px 0;
+      color: #fff;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 300;
+        transition: all ease .5s;
+        text-align: left;
+        width: 100%;
+        padding-left: 3px;
+        cursor: pointer;
+
+        &:focus {
+          background-color: #24292e;
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    .pen {
+      position: absolute;
+      right: 0;
+      padding-right: 5px;
+    }
+  }
+
+  &-menu {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 15px;
+
+
+    a {
+      color: #fff;
+      margin-right: 16px;
+      font-family: var(--my-font);
+      font-weight: 600;
+      font-size: 16px;
+      transition: all ease .5s;
+      cursor: pointer;
+
+      &:hover {
+        color: #afb8c1;
+      }
+    }
+  }
+
+  &-right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-left: auto;
+    gap: 15px;
+    & button{
+      border:none;
+      transition: all ease .5s;
+      cursor: pointer;
+
+      &:hover {
+        color: #afb8c1;
+      }
+      img{
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        transition: all .5s linear;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    i {
+      color: #ccc;
+      transition: all ease .5s;
+      cursor: pointer;
+
+      &:hover {
+        color: #afb8c1;
+      }
+    }
+
+    img {
+      border-radius: 100%;
+      transition: all .5s linear;
+      cursor: pointer;
+
+      &:hover {
+        color: #afb8c1;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+#repos{
+  & a{
+    &:hover{
+      color: green;
+    }
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 5%;
+  margin: 30px;
+  left: 0;
+  margin: 0 auto;
+  height: 30px;
+  line-height: 60px;
+  width: 100%;
+
+  &-logo {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+
+    i {
+      font-size: 35px;
+      color: #f8f8f8;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    p {
+      font-size: 14px;
+      color: white;
+    }
+  }
+}

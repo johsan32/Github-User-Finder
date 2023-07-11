@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Github Search</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-logo">
+      <a href="/"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <form class="header-search" id="form">
+      <button type="submit">
+        <i class="fa-solid fa-magnifying-glass glass"></i>
+      </button>
+      <input class="input" type="text" placeholder="Search or jump to..." id="search" autocomplete="off">
+      <i class="fa-solid fa-feather pen"></i>
+    </form>
+    <div class="header-menu d-none d-xl-block">
+      <a href="#">Pull requests</a>
+      <a href="#">Issues</a>
+      <a href="#">Marketplace</a>
+      <a href="#">Explore</a>
+    </div>
+    <div class="header-right">
+      <span id="dark-mod" class="text-warning"></span>
+      <button id="btn-theme" class="btn"><img src="images/day-and-night.png" alt=""></button>
+      <i class="fa-regular fa-bell"></i>
+      <i class="fa-regular fa-plus"></i>
+      <i class="fa-sharp fa-solid fa-caret-down"></i>
+      <img id="header-img" src="" width="50px" height="50px" alt="image" class="text-white">
+      <i class="fa-sharp fa-solid fa-caret-down"></i>
+    </div>
+  </header>
+  <!-- SEARCH -->
+  <section class="container m-4" >
+    <div id="alert" class="text-center fs-5">
+
+    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center w-100 p-4">
+        <h1>Github User Search</h1>
+        <p>To access user information, search by username.</p>
+        <div class="d-flex align-items-center justify-content-between gap-2 w-100">
+          <input id="search-input" class="form-control" type="text" placeholder="Search all of GitHub Owners...">
+          <button id="search-button" class="btn btn-outline-secondary btn-lg ">Search</button>
+        </div>
+    </div>
+  </section>
+  <!-- SAERCH SONUÇ -->
+  <section id="user-card" class="container m-4 ">
+    <!-- <div class="row border d-flex justify-content-between p-4">
+      <div class="d-flex flex-column col-md-3">
+        <img class="rounded-5 img-fluid" src="images/profil.jpg" alt="">
+        <a class="btn btn-primary w-100 my-4"><i class="fa-regular fa-user pe-2"></i>Show user profile</a>
+      </div>
+      <div class="d-flex flex-column col-md-9 p-4">
+        <div class="d-flex flex-row  justify-content-between pb-4 gap-3">
+          <span class=" btn btn-primary fs-6"><i class="fa-solid fa-book-open pe-2"></i>Repositories</span>
+          <span class="btn btn-secondary fs-6"><i class="fa-solid fa-book-open pe-2"></i>Overview</span>
+          <span class="btn btn-success fs-6"><i class="fa-solid fa-users pe-2"></i>Followers</span>
+          <span class="btn btn-danger fs-6"><i class="fa-solid fa-users pe-2"></i>Following</span>
+        </div>
+        <div class="flex-column flex-column">
+          <ul class="list-group">
+            <li class="list-group-item"><i class="fa-regular fa-address-card pe-2"></i>About :</li>
+            <li class="list-group-item"><i class="fa-regular fa-building pe-2"></i>Company :</li>
+            <li class="list-group-item"><i class="fa-solid fa-globe pe-2"></i>Web Site :</li>
+            <li class="list-group-item"><i class="fa-solid fa-location-dot pe-2"></i>Location :</li>
+            <li class="list-group-item"><i class="fa-regular fa-calendar-days pe-2"></i>Calendar</li>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </section>
+  <!-- repolar -->
+  <section id="repos" class="container ">
+    <!-- <h1 class="text-white pb-2">En son repolar</h1> -->
+  <!--   <div class="row border p-3">
+      <div class="col-md-6">
+        <a href="">repolar</a>
+      </div>
+      <div class="col-md-6">
+          <span class=" btn btn-primary fs-6"><i class="fa-regular fa-eye pe-2"></i>Unwatch</span>
+          <span class="btn btn-secondary fs-6"><i class="fa-solid fa-code-fork pe-2"></i></i>Fork</span>
+          <span class="btn btn-success fs-6"><i class="fa-regular fa-star pe-2"></i></i>Star</span>
+      </div>
+    </div> -->
+  </section>
+
+
+
+
+<!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-main">
+      <div class="footer-logo">
+        <i id="footer-img" class="fa-brands fa-github"></i>
+        <!-- <p>© 2023 GitHub, Inc.</p> -->
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js" type="module"></script>
+
+</body>
+
+</html>
